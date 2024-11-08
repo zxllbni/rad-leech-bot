@@ -122,13 +122,13 @@ from .helper.common import TaskConfig
 
 async def start(client, message):
     buttons = ButtonMaker()
-    buttons.url_button("ʙᴏᴛ\nᴏᴡɴᴇʀ", "https://t.me/u_xzyp", "header")
+    buttons.url_button("ʙᴏᴛ\nᴏᴡɴᴇʀ", "https://t.me/noob_je", "header")
     
     is_authorized = await CustomFilters.authorized(client, message)
     status = "Authorize: ✅" if is_authorized else "Authorize: ❌"
 
     if not is_authorized:
-        buttons.url_button("ʙᴏᴛ\nʀᴇᴘᴏ", "https://github.com/clyfly/rad-leech-bot")
+        buttons.url_button("ʙᴏᴛ\nʀᴇᴘᴏ", "https://github.com/zxlbni")
         
     reply_markup = buttons.build_menu(2)
 
